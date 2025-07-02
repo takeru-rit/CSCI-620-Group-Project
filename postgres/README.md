@@ -11,3 +11,11 @@ It will also start PGAdmin at http://localhost:15433. You can log in with the cr
 
 You can then connect to the PostgreSQL database using the following details:
 - **Password**: `postgres`
+
+If tou want to hard reset the database, you can run the following command in the terminal:
+
+```bash
+docker-compose down -v
+```
+
+Since everything is volume based, this will remove all the data.
